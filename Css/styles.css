@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NAVEGADOR */
+
+.navegador{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(3, 167, 218);
+}
+
+.navegador__barraSuperior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegador__logo{
+    width: 80px;
+    margin: 15px;
+}
+
+.navegador__sr{
+    color: rgb(102, 102, 102);
+    font-size: 40px;
+}
+
+.navegador__lista{
+    display: flex;
+    list-style: none;
+    background-color: rgb(123, 207, 247);
+}
+
+.navegador__pestaña{
+    margin: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+}
+
+.navegador__pestaña:hover {
+    transform: scale(1.1,1.1);
+}
+
+.navegador__pestaña a{
+    color: black;
+    text-decoration: none;
+}
+
+/* INDEX */
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.principal__foto{
+    width: 95vw;
+}
+
+p{
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+    margin: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(113, 186, 201);
+}
+
+.footer__redes--img{
+    width: 40px;
+    padding: 15px;
+}
+
+/* NOSOTROS */
+
+.nosotros__imagen{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nosotros__imagen--img{
+    width: 400px;
+    padding: 10px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"g29 descripcion__g29 precio__g29"
+                        "t300 descripcion__t300 precio__t300"
+                        "fanatec descripcion__fana precio__fana";
+}
+
+.g29{
+    grid-area: g29;
+}
+
+.descripcion__g29{
+    grid-area: descripcion__g29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio__g29{
+    grid-area: precio__g29;
+}
+
+.t300{
+    grid-area: t300;
+}
+
+.descripcion__t300{
+    grid-area: descripcion__t300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio__t300{
+    grid-area: precio__t300;
+}
+
+.fanatec{
+    grid-area: fanatec;
+}
+
+.descripcion__fana{
+    grid-area: descripcion__fana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio__fana{
+    grid-area: precio__fana;
+}
+
+.productos__imagen{
+    display: flex;
+    align-self: center;
+    width: 300px;
+    padding: 30px;
+}
+
+.productos__compra{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    background-image: linear-gradient(to top, gray, white);
+    border-radius: 8px;
+    border-color: lightgray;
+}
+
+button:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/* NG esport */
+
+.esport__section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.esport__plataforma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px gray;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.esport__imagen{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+/* CONTACTO */
+
+.formulario__item{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps__titulo{
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.maps__imagen{
+    width: 800px;
+    height: 300px;
+    padding: 30px;
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (min-width: 320px) and (max-width: 575px){
+
+    .navegador__barraSuperior{
+        flex-direction: column;
+    }
+
+    .navegador__logo{
+        width: 60px;
+        margin: 10px;
+    }
+
+    .navegador__sr{
+        font-size: 25px;
+    }
+
+    .navegador__lista{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegador__pestaña{
+        font-size: 16px;
+    }
+
+    .navegador__pestaña:hover {
+        transform: none;
+    }
+
+    .principal{
+        padding: 10px;
+    }
+
+    .nosotros__imagen{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros__imagen--img{
+        width: 90vw;
+    }
+
+    .productos{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas:"g29" 
+                            "descripcion__g29" 
+                            "precio__g29"
+                            "t300" 
+                            "descripcion__t300" 
+                            "precio__t300"
+                            "fanatec" 
+                            "descripcion__fana" 
+                            "precio__fana";
+        row-gap: 30px;
+        padding: 15px;
+    }
+
+    .productos__imagen{
+        width: 80vw;
+    }
+
+    .esport__section{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .esport__plataforma{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esport__imagen{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .formulario__item{
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .maps{
+        flex-direction: column;
+    }
+
+    .maps__imagen{
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+    }
+
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* MEDIA QUERIES TABLET*/
+
+@media (min-width: 576px) and (max-width: 992px){
+
+    .nosotros__imagen{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros__imagen--img{
+        width: 90vw;
+    }
+
+    .esport__section{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .esport__plataforma{
+        flex-direction: row;
+    }
+
+    .esport__imagen{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    
+    .maps{
+        flex-direction: column;
+    }
+
+    .maps__imagen{
+        width: 80vw;
+        height: 200px;
+        padding: 30px;
+    }
+
+}
