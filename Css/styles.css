@@ -29,8 +29,6 @@
 }
 
 .navegador__lista{
-    display: flex;
-    list-style: none;
     background-image: linear-gradient(to top, rgb(139, 200, 223), rgb(81, 167, 207));
 }
 
@@ -171,7 +169,7 @@ p{
     font-size: 15px;
 }
 
-button{
+.productos button{
     width: 100px;
     height: 30px;
     font-family: 'Lato', sans-serif;
@@ -181,7 +179,7 @@ button{
     border-color: lightgray;
 }
 
-button:hover{
+.productos button:hover{
     transform: scale(1.1, 1.1);
 }
 
@@ -253,6 +251,7 @@ button:hover{
     height: 300px;
     padding: 30px;
 }
+
 
 /* MEDIA QUERIES MOBILE */
 
