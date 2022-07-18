@@ -208,32 +208,6 @@ p{
 
 /* CONTACTO */
 
-.formulario__item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-}
-
-.formulario__item input{
-    width: 450px;
-    height: 25px;
-}
-
-.formulario__item--comentario{
-    width: 450px;
-    height: 450px;
-}
-
-.formulario__item--btn input{
-    display: inline;
-    width: 150px;
-    margin-left: 30px;
-    font-family: 'Lato', sans-serif;
-}
-
 .maps{
     display: flex;
     justify-content: center;

@@ -48,33 +48,26 @@
                 </div>
             </div>
         </nav>
-        </nav>
     </header>
     <main>
-        <section class="formulario">
-            <form method="post">
-                <div class="formulario__item">
-                    <label> Nombre y Apellido </label>
-                    <input>
-                </div>
-                <div class="formulario__item">
-                    <label> Domicilio</label>
-                    <input>
-                </div>
-                <div class="formulario__item">
-                    <label> Email </label>
-                    <input>
-                </div>
-                <div class="formulario__item">
-                    <label> Comentario </label>
-                    <textarea class="formulario__item--comentario" name="" id=""></textarea>
-                </div>
-                <div class="formulario__item--btn">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </div>
-            </form>
-        </section>
+        <form class="formulario" method="post">
+            <div class="form-floating w-80 m-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                <label for="floatingInput">Nombre y Apellido</label>
+            </div> 
+            <div class="form-floating w-80 m-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Direccion">
+                <label for="floatingInput">Direccion</label>
+            </div>
+            <div class="form-floating w-80 m-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating w-80 m-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comentario</label>
+            </div>
+        </form>
         <section class="maps">
             <h3 class="maps__titulo">Donde encontrarnos</h3>
             <iframe class="maps__imagen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.012481140474!2d-64.22554328515834!3d-31.41378220326861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298a3960d1027%3A0xa9014b4ff2445378!2zTGXDs24gUGluZWxvIDU5MiwgQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1655763546170!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
