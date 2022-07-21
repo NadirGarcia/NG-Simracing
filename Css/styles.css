@@ -291,18 +291,6 @@ h1{
         padding: 20px;
     }
 
-    h1{
-        font-size: 30px;
-    }
-
-    .formulario__item{
-        width: 90vw;
-    }
-
-    .formulario__item--comentario{
-        width: 90vw;
-    }
-
     .maps{
         flex-direction: column;
     }
