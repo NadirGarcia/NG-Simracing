@@ -9,6 +9,7 @@
     position: sticky;
     top: 0px;
     background-color: #5AF;
+    z-index: +1;
 }
 
 .navegador__barraSuperior{
@@ -32,6 +33,11 @@
     background-image: linear-gradient(to top, rgb(139, 200, 223), rgb(81, 167, 207));
 }
 
+li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* INDEX */
 
 .principal{
@@ -48,7 +54,7 @@
 
 p{
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin: 16px;
 }
 
@@ -61,6 +67,7 @@ p{
 
 .footer__derechos{
     color: #FFFFFF;
+    font-size: 16px;
 }
 
 .footer__redes--img{
@@ -71,6 +78,7 @@ p{
 .footer__redes--imgInsta{
     width:62px;
 }
+
 /* NOSOTROS */
 
 .nosotros__imagen{
@@ -103,6 +111,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .precio__g29{
@@ -118,6 +128,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .precio__t300{
@@ -133,6 +145,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .precio__fana{
@@ -157,16 +171,19 @@ p{
 .productos button{
     width: 100px;
     height: 30px;
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    background-image: linear-gradient(to top, gray, white);
-    border-radius: 8px;
-    border-color: lightgray;
+    background-image: linear-gradient(to top, rgb(16, 141, 124), rgba(57, 236, 221, 0.87));
+    border-radius: 20px;
+    border: none;
+    color: white;
 }
 
 .productos button:hover{
-    transform: scale(1.1, 1.1);
-}
+    transform: scale(1.05, 1.05);
+    transition: 1s;
+    border:  1px solid rgb(201, 83, 5);
+    color: rgb(201, 83, 5);
+    }
+
 
 /* NG esport */
 
@@ -175,20 +192,25 @@ p{
     justify-content: space-around;
 }
 
-.esport__plataforma{
+.esport__card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 5px gray;
+    border: 4px solid rgb(241, 174, 111);
     border-radius: 10px;
     margin: 20px;
 }
 
-.esport__imagen{
+.esport__card--img{
     width: 300px;
     height: 300px;
     padding: 20px;
+}
+
+.esport__card--text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 /* CONTACTO */
@@ -196,25 +218,27 @@ p{
 h1{
     font-family:'Lato', sans-serif;
     font-size: 50px;
-    color: cadetblue;
+    color: rgba(13, 189, 174, 0.87);
 }
 
-.maps{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn{
+    background-image: linear-gradient(to top, rgb(16, 141, 124), rgba(57, 236, 221, 0.87));
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s;
+    border: 1px solid rgb(201, 83, 5);
+    color: rgb(201, 83, 5);
 }
 
 .maps__titulo{
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    padding: 15px;
-}
-
-.maps__imagen{
-    width: 800px;
-    height: 300px;
-    padding: 30px;
+    font-family:'Lato', sans-serif;
+    font-size: 35px;
+    color: rgba(13, 189, 174, 0.87);
 }
 
 
@@ -233,13 +257,13 @@ h1{
         font-size: 25px;
     }
 
-    .navegador__pestaña:hover {
-        transform: none;
-    }
+    /* INDEX MOBILE */
 
     .principal{
         padding: 10px;
     }
+
+    /* NOSOTROS MOBILE */
 
     .nosotros__imagen{
         flex-direction: column;
@@ -249,6 +273,8 @@ h1{
     .nosotros__imagen--img{
         width: 90vw;
     }
+
+    /* PRODUCTOS MOBILE */
 
     .productos{
         grid-template-columns: 1fr ;
@@ -270,9 +296,11 @@ h1{
         width: 80vw;
     }
 
-    button:hover{
+    .productos button:hover{
         transform: none;
     }
+
+    /* ESPORT MOBILE */
 
     .esport__section{
         flex-direction: column;
@@ -291,22 +319,18 @@ h1{
         padding: 20px;
     }
 
-    .maps{
-        flex-direction: column;
+    /* CONTACTO MOBILE */
+
+    h1{
+        font-size: 35px;
     }
 
-    .maps__imagen{
-        width: 300px;
-        height: 300px;
-        padding: 30px;
+    .btn:hover{
+        transform: none;
     }
 
-    .formulario__item input{
-        width: 90vw;
-    }
-
-    .formulario__item--btn input{
-        width: 80px;
+    .maps__titulo{
+        font-size: 20px;
     }
 
     .footer{
@@ -319,6 +343,8 @@ h1{
 
 @media (min-width: 576px) and (max-width: 992px){
 
+/* NOSOTROS TABLET */
+
     .nosotros__imagen{
         flex-direction: column;
         align-items: center;
@@ -328,9 +354,13 @@ h1{
         width: 90vw;
     }
 
-    button:hover{
+    /* PRODUCTOS TABLET */
+
+    .productos button:hover{
         transform: none;
     }
+
+    /* ESPORT TABLET */
 
     .esport__section{
         flex-direction: column;
@@ -347,14 +377,10 @@ h1{
         padding: 20px;
     }
 
+    /* CONTACTO TABLET */
+
     .maps{
         flex-direction: column;
-    }
-
-    .maps__imagen{
-        width: 80vw;
-        height: 200px;
-        padding: 30px;
     }
 
 }
