@@ -1,0 +1,10 @@
+.nosotros__imagen{
+    display: flex;
+    justify-content: space-around;
+
+    &--img{
+        width: 400px;
+        padding: 10px;
+    }
+}
+

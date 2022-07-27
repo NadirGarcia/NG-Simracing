@@ -1,0 +1,147 @@
+
+/* MEDIA QUERIES MOBILE */
+
+@media (min-width: 320px) and (max-width: 575px){
+
+    /* NAVEGADOR MOBILE*/   
+
+    .navegador{
+        &__logo{
+            width: 60px;
+            margin: 10px;
+        }
+
+        &__sr{
+            font-size: 25px;
+        }
+    }
+
+    /* INDEX MOBILE */
+
+    .principal{
+        padding: 10px;
+    }
+
+    /* NOSOTROS MOBILE */
+
+    .nosotros__imagen{
+        flex-direction: column;
+        align-items: center;
+
+        &--img{
+            width: 90vw;
+        }
+    }
+
+
+
+    /* PRODUCTOS MOBILE */
+
+    .productos{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas:"g29" 
+                            "g29__descripcion" 
+                            "g29__precio"
+                            "t300" 
+                            "t300__descripcion" 
+                            "t300__precio"
+                            "fanatec" 
+                            "fanatec__descripcion" 
+                            "fanatec__precio";
+        row-gap: 30px;
+        padding: 15px;
+    }
+
+    .productos__imagen{
+        width: 80vw;
+    }
+
+    .productos button:hover{
+        transform: none;
+    }
+
+    /* ESPORT MOBILE */
+
+    .esport__section{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .esport__plataforma{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esport__imagen{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    /* CONTACTO MOBILE */
+
+    h1{
+        font-size: 35px;
+    }
+
+    .btn:hover{
+        transform: none;
+    }
+
+    .maps__titulo{
+        font-size: 20px;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* MEDIA QUERIES TABLET*/
+
+@media (min-width: 576px) and (max-width: 992px){
+
+/* NOSOTROS TABLET */
+
+    .nosotros__imagen{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros__imagen--img{
+        width: 90vw;
+    }
+
+    /* PRODUCTOS TABLET */
+
+    .productos button:hover{
+        transform: none;
+    }
+
+    /* ESPORT TABLET */
+
+    .esport__section{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .esport__plataforma{
+        flex-direction: row;
+    }
+
+    .esport__imagen{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    /* CONTACTO TABLET */
+
+    .maps{
+        flex-direction: column;
+    }
+
+}

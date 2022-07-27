@@ -1,0 +1,90 @@
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"g29 g29__descripcion g29__precio"
+                        "t300 t300__descripcion t300__precio"
+                        "fanatec fanatec__descripcion fanatec__precio";
+
+    &__imagen{
+        display: flex;
+        align-self: center;
+        width: 300px;
+        padding: 30px;
+    }
+
+    &__compra{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-family: $font-principal;
+        font-size: 15px;
+    }
+
+    & button{
+        width: 100px;
+        height: 30px;
+        background-image: linear-gradient(to top, rgb(16, 141, 124), rgba(57, 236, 221, 0.87));
+        border-radius: 20px;
+        border: none;
+        color: white;
+        &:hover{
+            transform: scale(1.05, 1.05);
+            transition: 1s;
+            border:  1px solid rgb(201, 83, 5);
+            color: rgb(201, 83, 5);
+        }
+    }
+
+    .g29{
+        grid-area: g29;
+
+        &__descripcion{
+            grid-area: g29__descripcion;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-secundaria;
+            font-size: 16px;
+        }
+        
+        &__precio{
+            grid-area: g29__precio;
+        }
+    }
+    
+    .t300{
+        grid-area: t300;
+
+        &__descripcion{
+            grid-area: t300__descripcion;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-secundaria;
+            font-size: 16px;
+        }
+        
+        &__precio{
+            grid-area: t300__precio;
+        }
+    }
+    
+
+    .fanatec{
+        grid-area: fanatec;
+
+        &__descripcion{
+            grid-area: fanatec__descripcion;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-secundaria;
+            font-size: 16px;
+        }
+        
+        &__precio{
+            grid-area: fanatec__precio;
+        }
+    }
+}
