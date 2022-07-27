@@ -1,0 +1,31 @@
+.navegador{
+    position: sticky;
+    top: 0px;
+    background-color: $color-principal;
+    z-index: +1;
+
+    &__barraSuperior{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__logo{
+        width: 100px;
+        margin-right: 15px;
+    }
+    
+    &__sr{
+        font-family: $font-secundaria;
+        color: #FFFFFF;
+        font-size: 35px;
+    }
+    
+    &__lista{
+        background-image: linear-gradient(to top, rgb(139, 200, 223), rgb(81, 167, 207));
+    }
+
+    & li{
+        font-family: $font-secundaria;
+    }
+}
