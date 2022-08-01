@@ -8,3 +8,14 @@ p{
     font-size: 20px;
     margin: 16px;
 }
+
+h1{
+    font-family: $font-principal;
+    font-size: 45px;
+    color: $color-titulos;
+}
+
+h4{
+    font-family: $font-secundaria;
+    color: $color-titulos;
+}

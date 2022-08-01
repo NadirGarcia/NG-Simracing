@@ -51,34 +51,45 @@
                             "fanatec__precio";
         row-gap: 30px;
         padding: 15px;
+
+        &__imagen{
+            width: 80vw;
+        }
+    
+        &__compra{
+            display: flex;
+            justify-self: center;
+            align-self: center;
+        }
+    
+        & button:hover{
+            transform: none;
+        }
     }
 
-    .productos__imagen{
-        width: 80vw;
-    }
 
-    .productos button:hover{
-        transform: none;
-    }
 
     /* ESPORT MOBILE */
 
-    .esport__section{
-        flex-direction: column;
-        align-content: center;
+    .esport{
+        &__section{
+            flex-direction: column;
+            align-content: center;
+        }
+
+        &__plataforma{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__imagen{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
     }
 
-    .esport__plataforma{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .esport__imagen{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-    }
 
     /* CONTACTO MOBILE */
 
@@ -144,4 +155,9 @@
         flex-direction: column;
     }
 
+    .btn{
+        &:hover{
+            transform: none;
+        }
+    }
 }
