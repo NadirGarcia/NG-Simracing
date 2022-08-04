@@ -5,7 +5,8 @@
 p {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  margin: 16px; }
+  text-align: justify;
+  margin: 25px; }
 
 h1 {
   font-family: "Lato", sans-serif;
@@ -69,7 +70,7 @@ h4 {
 
 .productos {
   display: grid;
-  grid-template-columns: 1fr 2fr 0.5fr;
+  grid-template-columns: 0.7fr 2fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "g29 g29__descripcion g29__precio" "t300 t300__descripcion t300__precio" "fanatec fanatec__descripcion fanatec__precio"; }
   .productos__imagen {
@@ -131,7 +132,8 @@ h4 {
 
 .esport__section {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  height: 100vh; }
 
 .esport__card {
   display: flex;
@@ -148,6 +150,9 @@ h4 {
   .esport__card--text {
     font-family: "Open Sans", sans-serif;
     font-size: 16px; }
+
+.formulario {
+  height: 100vh; }
 
 .btn {
   background-image: linear-gradient(to top, #108d7c, rgba(57, 236, 221, 0.87));
