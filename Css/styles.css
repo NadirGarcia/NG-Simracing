@@ -132,8 +132,7 @@ h4 {
 
 .esport__section {
   display: flex;
-  justify-content: space-around;
-  height: 100vh; }
+  justify-content: space-around; }
 
 .esport__card {
   display: flex;
@@ -150,9 +149,6 @@ h4 {
   .esport__card--text {
     font-family: "Open Sans", sans-serif;
     font-size: 16px; }
-
-.formulario {
-  height: 100vh; }
 
 .btn {
   background-image: linear-gradient(to top, #108d7c, rgba(57, 236, 221, 0.87));
