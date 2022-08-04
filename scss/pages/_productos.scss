@@ -41,9 +41,7 @@
 
         &__descripcion{
             grid-area: g29__descripcion;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .productos-grid;
             font-family: $font-secundaria;
             font-size: 16px;
         }
@@ -58,9 +56,7 @@
 
         &__descripcion{
             grid-area: t300__descripcion;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .productos-grid;
             font-family: $font-secundaria;
             font-size: 16px;
         }
@@ -76,9 +72,7 @@
 
         &__descripcion{
             grid-area: fanatec__descripcion;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .productos-grid;
             font-family: $font-secundaria;
             font-size: 16px;
         }
