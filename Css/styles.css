@@ -1,3 +1,8 @@
+.productos-grid, .productos .g29__descripcion, .productos .t300__descripcion, .productos .fanatec__descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -100,9 +105,6 @@ h4 {
     grid-area: g29; }
     .productos .g29__descripcion {
       grid-area: g29__descripcion;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: "Open Sans", sans-serif;
       font-size: 16px; }
     .productos .g29__precio {
@@ -111,9 +113,6 @@ h4 {
     grid-area: t300; }
     .productos .t300__descripcion {
       grid-area: t300__descripcion;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: "Open Sans", sans-serif;
       font-size: 16px; }
     .productos .t300__precio {
@@ -122,9 +121,6 @@ h4 {
     grid-area: fanatec; }
     .productos .fanatec__descripcion {
       grid-area: fanatec__descripcion;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: "Open Sans", sans-serif;
       font-size: 16px; }
     .productos .fanatec__precio {
