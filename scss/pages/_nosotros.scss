@@ -1,10 +1,59 @@
-.nosotros__imagen{
-    display: flex;
-    justify-content: space-around;
+.nosotros{
+    & img{
+        width: 200px;
+        padding-bottom: 2px;
+    }
 
-    &--img{
-        width: 400px;
-        padding: 10px;
+    &__rally{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:"rallyText imgRally";
+            background-color: #DDE8F0;
+
+            &--texto{
+                grid-area: rallyText;
+                text-align: justify;
+            }
+            
+            &--img{
+                grid-area: imgRally;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+                flex-wrap: wrap;
+                border-left: 3px solid #ff9201;
+                margin: 15px;
+            }
+    }
+    
+    &__pista{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"imgPista pistaText";
+        background-color:  #d1e4f1;
+    
+        &--texto{
+            grid-area: pistaText;
+            text-align: justify;
+        }
+        
+        &--img{
+            grid-area: imgPista;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            flex-wrap: wrap;
+            border-right: 3px solid #ff9201;
+            margin: 15px;
+        }
+        
     }
 }
+
+
+
 

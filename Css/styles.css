@@ -32,8 +32,8 @@ h4 {
     justify-content: center;
     align-items: center; }
   .navegador__logo {
-    width: 100px;
-    margin-right: 15px; }
+    width: 250px;
+    margin: 15px; }
   .navegador__sr {
     font-family: "Open Sans", sans-serif;
     color: #FFFFFF;
@@ -61,17 +61,51 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 20px; }
+  align-items: center; }
   .principal__foto {
-    width: 95vw; }
+    width: 98vw; }
 
-.nosotros__imagen {
-  display: flex;
-  justify-content: space-around; }
-  .nosotros__imagen--img {
-    width: 400px;
-    padding: 10px; }
+.nosotros img {
+  width: 200px;
+  padding-bottom: 2px; }
+
+.nosotros__rally {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "rallyText imgRally";
+  background-color: #DDE8F0; }
+  .nosotros__rally--texto {
+    grid-area: rallyText;
+    text-align: justify; }
+  .nosotros__rally--img {
+    grid-area: imgRally;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    border-left: 3px solid #ff9201;
+    margin: 15px; }
+
+.nosotros__pista {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imgPista pistaText";
+  background-color: #d1e4f1; }
+  .nosotros__pista--texto {
+    grid-area: pistaText;
+    text-align: justify; }
+  .nosotros__pista--img {
+    grid-area: imgPista;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    border-right: 3px solid #ff9201;
+    margin: 15px; }
 
 .productos {
   display: grid;
@@ -166,19 +200,43 @@ h4 {
 @media (min-width: 320px) and (max-width: 575px) {
   /* NAVEGADOR MOBILE*/
   .navegador__logo {
-    width: 60px;
+    width: 150px;
     margin: 10px; }
-  .navegador__sr {
-    font-size: 25px; }
   /* INDEX MOBILE */
   .principal {
     padding: 10px; }
   /* NOSOTROS MOBILE */
-  .nosotros__imagen {
-    flex-direction: column;
-    align-items: center; }
-    .nosotros__imagen--img {
-      width: 90vw; }
+  .nosotros img {
+    width: 150px; }
+  .nosotros__rally {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "rallyText"  "imgRally"; }
+    .nosotros__rally--img {
+      grid-area: imgRally;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-wrap: wrap;
+      border-left: none;
+      border-top: 3px solid #ff9201;
+      margin: 15px; }
+  .nosotros__pista {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "pistaText"  "imgPista"; }
+    .nosotros__pista--img {
+      grid-area: imgPista;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-wrap: wrap;
+      border-left: none;
+      border-right: none;
+      border-top: 3px solid #ff9201;
+      margin: 15px; }
   /* PRODUCTOS MOBILE */
   .productos {
     grid-template-columns: 1fr;
