@@ -120,7 +120,8 @@ h4 {
   .productos__compra {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
     font-family: "Lato", sans-serif;
     font-size: 15px; }
   .productos button {
@@ -140,7 +141,8 @@ h4 {
     .productos .g29__descripcion {
       grid-area: g29__descripcion;
       font-family: "Open Sans", sans-serif;
-      font-size: 16px; }
+      font-size: 16px;
+      border-bottom: 3px solid #ff9201; }
     .productos .g29__precio {
       grid-area: g29__precio; }
   .productos .t300 {
@@ -148,7 +150,8 @@ h4 {
     .productos .t300__descripcion {
       grid-area: t300__descripcion;
       font-family: "Open Sans", sans-serif;
-      font-size: 16px; }
+      font-size: 16px;
+      border-bottom: 3px solid #ff9201; }
     .productos .t300__precio {
       grid-area: t300__precio; }
   .productos .fanatec {
@@ -156,7 +159,8 @@ h4 {
     .productos .fanatec__descripcion {
       grid-area: fanatec__descripcion;
       font-family: "Open Sans", sans-serif;
-      font-size: 16px; }
+      font-size: 16px;
+      border-bottom: 3px solid #ff9201; }
     .productos .fanatec__precio {
       grid-area: fanatec__precio; }
 
@@ -210,7 +214,7 @@ h4 {
     width: 150px; }
   .nosotros__rally {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     grid-template-areas: "rallyText"  "imgRally"; }
     .nosotros__rally--img {
       grid-area: imgRally;
@@ -224,7 +228,7 @@ h4 {
       margin: 15px; }
   .nosotros__pista {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     grid-template-areas: "pistaText"  "imgPista"; }
     .nosotros__pista--img {
       grid-area: imgPista;
@@ -245,13 +249,21 @@ h4 {
     row-gap: 30px;
     padding: 15px; }
     .productos__imagen {
-      width: 80vw; }
+      justify-self: center;
+      width: 80vw;
+      border-top: 3px solid #ff9201; }
     .productos__compra {
       display: flex;
       justify-self: center;
       align-self: center; }
     .productos button:hover {
       transform: none; }
+    .productos .g29__descripcion {
+      border-bottom: none; }
+    .productos .t300__descripcion {
+      border-bottom: none; }
+    .productos .fanatec__descripcion {
+      border-bottom: none; }
   /* ESPORT MOBILE */
   .esport__section {
     flex-direction: column;

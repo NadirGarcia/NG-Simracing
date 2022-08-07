@@ -28,7 +28,7 @@
 
         &__rally{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
         grid-template-areas:"rallyText" 
                             "imgRally";
 
@@ -47,7 +47,7 @@
 
         &__pista{
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 0.5fr;
             grid-template-areas:"pistaText" 
                                 "imgPista";
 
@@ -84,7 +84,9 @@
         padding: 15px;
 
         &__imagen{
+            justify-self: center;
             width: 80vw;
+            border-top: 3px solid #ff9201;
         }
     
         &__compra{
@@ -96,7 +98,26 @@
         & button:hover{
             transform: none;
         }
+
+        .g29{
+            &__descripcion{
+                border-bottom: none;
+            }
+        }
+
+        .t300{
+            &__descripcion{
+            border-bottom: none;
+            }
+        }
+
+        .fanatec{
+            &__descripcion{
+                border-bottom:none;
+            }
+        }
     }
+
 
 
 
