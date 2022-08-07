@@ -22,10 +22,6 @@
 
     .nosotros{
 
-        & img{
-            width: 150px;
-        }
-
         &__rally{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
@@ -34,14 +30,9 @@
 
             &--img{
                 grid-area: imgRally;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-content: center;
-                flex-wrap: wrap;
                 border-left:none;
                 border-top: 3px solid #ff9201;
-                margin: 15px;
+                padding: 15px;
             }
         }
 
@@ -53,15 +44,9 @@
 
             &--img{
                 grid-area: imgPista;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-content: center;
-                flex-wrap: wrap;
-                border-left:none;
-                border-right: none;
+                border-right:none;
                 border-top: 3px solid #ff9201;
-                margin: 15px;
+                padding: 15px;
             }
         }
     }
@@ -118,9 +103,6 @@
         }
     }
 
-
-
-
     /* ESPORT MOBILE */
 
     .esport{
@@ -128,22 +110,13 @@
             flex-direction: column;
             align-content: center;
         }
-
-        &__plataforma{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &__imagen{
-            width: 200px;
-            height: 200px;
-            padding: 20px;
-        }
     }
 
-
     /* CONTACTO MOBILE */
+
+    .formulario{
+        height: 90vh;
+    }
 
     h1{
         font-size: 35px;
@@ -167,16 +140,6 @@
 
 @media (min-width: 576px) and (max-width: 992px){
 
-/* NOSOTROS TABLET */
-
-    .nosotros__imagen{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nosotros__imagen--img{
-        width: 90vw;
-    }
 
     /* PRODUCTOS TABLET */
 
@@ -191,17 +154,11 @@
         align-content: center;
     }
 
-    .esport__plataforma{
-        flex-direction: row;
-    }
-
-    .esport__imagen{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-    }
-
     /* CONTACTO TABLET */
+
+    .formulario{
+        height: 80vh;
+    }
 
     .maps{
         flex-direction: column;

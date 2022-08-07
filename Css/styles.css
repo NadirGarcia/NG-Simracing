@@ -184,6 +184,9 @@ h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 16px; }
 
+.formulario {
+  height: 100vh; }
+
 .btn {
   background-image: linear-gradient(to top, #108d7c, rgba(57, 236, 221, 0.87));
   border-radius: 20px;
@@ -200,6 +203,9 @@ h4 {
   font-size: 35px;
   color: #037474; }
 
+textarea {
+  resize: none; }
+
 /* MEDIA QUERIES MOBILE */
 @media (min-width: 320px) and (max-width: 575px) {
   /* NAVEGADOR MOBILE*/
@@ -210,37 +216,24 @@ h4 {
   .principal {
     padding: 10px; }
   /* NOSOTROS MOBILE */
-  .nosotros img {
-    width: 150px; }
   .nosotros__rally {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr;
     grid-template-areas: "rallyText"  "imgRally"; }
     .nosotros__rally--img {
       grid-area: imgRally;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-content: center;
-      flex-wrap: wrap;
       border-left: none;
       border-top: 3px solid #ff9201;
-      margin: 15px; }
+      padding: 15px; }
   .nosotros__pista {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr;
     grid-template-areas: "pistaText"  "imgPista"; }
     .nosotros__pista--img {
       grid-area: imgPista;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-content: center;
-      flex-wrap: wrap;
-      border-left: none;
       border-right: none;
       border-top: 3px solid #ff9201;
-      margin: 15px; }
+      padding: 15px; }
   /* PRODUCTOS MOBILE */
   .productos {
     grid-template-columns: 1fr;
@@ -268,15 +261,9 @@ h4 {
   .esport__section {
     flex-direction: column;
     align-content: center; }
-  .esport__plataforma {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .esport__imagen {
-    width: 200px;
-    height: 200px;
-    padding: 20px; }
   /* CONTACTO MOBILE */
+  .formulario {
+    height: 90vh; }
   h1 {
     font-size: 35px; }
   .btn:hover {
@@ -288,12 +275,6 @@ h4 {
 
 /* MEDIA QUERIES TABLET*/
 @media (min-width: 576px) and (max-width: 992px) {
-  /* NOSOTROS TABLET */
-  .nosotros__imagen {
-    flex-direction: column;
-    align-items: center; }
-  .nosotros__imagen--img {
-    width: 90vw; }
   /* PRODUCTOS TABLET */
   .productos button:hover {
     transform: none; }
@@ -301,13 +282,9 @@ h4 {
   .esport__section {
     flex-direction: column;
     align-content: center; }
-  .esport__plataforma {
-    flex-direction: row; }
-  .esport__imagen {
-    width: 200px;
-    height: 200px;
-    padding: 20px; }
   /* CONTACTO TABLET */
+  .formulario {
+    height: 80vh; }
   .maps {
     flex-direction: column; }
   .btn:hover {
