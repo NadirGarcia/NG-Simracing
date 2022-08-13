@@ -21,15 +21,18 @@
     /* NOSOTROS MOBILE */
 
     .nosotros{
+        & img{
+            width: 300px;
+            padding-bottom: 2px;
+        }
 
         &__rally{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr;
+        grid-template-rows: .5fr 1fr;
         grid-template-areas:"rallyText" 
                             "imgRally";
 
             &--img{
-                grid-area: imgRally;
                 border-left:none;
                 border-top: 3px solid #ff9201;
                 padding: 15px;
@@ -38,12 +41,11 @@
 
         &__pista{
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 0.5fr;
+            grid-template-rows: .5fr 1fr;
             grid-template-areas:"pistaText" 
                                 "imgPista";
 
             &--img{
-                grid-area: imgPista;
                 border-right:none;
                 border-top: 3px solid #ff9201;
                 padding: 15px;
@@ -115,7 +117,7 @@
     /* CONTACTO MOBILE */
 
     .formulario{
-        height: 90vh;
+        height: 60vh;
     }
 
     h1{
@@ -157,7 +159,7 @@
     /* CONTACTO TABLET */
 
     .formulario{
-        height: 80vh;
+        height: 55vh;
     }
 
     .maps{

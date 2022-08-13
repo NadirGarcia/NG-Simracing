@@ -20,3 +20,11 @@ h4{
     font-family: $font-secundaria;
     color: $color-titulos;
 }
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar{
+    --bs-navbar-toggler-focus-width: none;
+}
