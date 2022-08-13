@@ -29,3 +29,11 @@
         font-family: $font-secundaria;
     }
 }
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar{
+    --bs-navbar-toggler-focus-width: none;
+}
