@@ -5,6 +5,23 @@
     align-items: center;
 
     &__foto{
-        width: 98vw;
+        position: relative;
+    }
+
+    &__texto{
+        position: absolute;
+        top: 350px;
+        left: 30px;
+
+        &--frase{
+            font-size: 52px;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+
+        &--McRae{
+            font-size: 24px;
+            color: whitesmoke;
+        }
     }
 }
