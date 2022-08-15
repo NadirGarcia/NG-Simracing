@@ -6,24 +6,37 @@
     /* NAVEGADOR MOBILE*/   
 
     .navegador{
+        
         &__logo{
-            width: 150px;
-            margin: 10px;
+            width: 9rem;
+            margin: 1rem;
         }
     }
 
     /* INDEX MOBILE */
 
     .principal{
-        padding: 10px;
+
+        &__texto{
+            top: 12rem;
+            left: 1rem;
+    
+            &--frase{
+                font-size: 1rem;
+            }
+    
+            &--McRae{
+                font-size: .7rem;
+            }
+        }
     }
 
     /* NOSOTROS MOBILE */
 
     .nosotros{
         & img{
-            width: 300px;
-            padding-bottom: 2px;
+            width: 20rem;
+            padding-bottom: .2rem;
         }
 
         &__rally{
@@ -34,8 +47,8 @@
 
             &--img{
                 border-left:none;
-                border-top: 3px solid #ff9201;
-                padding: 15px;
+                border-top: .25rem solid #ff9201;
+                padding: 1rem;
             }
         }
 
@@ -47,8 +60,8 @@
 
             &--img{
                 border-right:none;
-                border-top: 3px solid #ff9201;
-                padding: 15px;
+                border-top: .25rem solid #ff9201;
+                padding: 1rem;
             }
         }
     }
@@ -57,7 +70,7 @@
 
     .productos{
         grid-template-columns: 1fr ;
-        grid-template-rows: auto;
+        grid-template-rows:auto;
         grid-template-areas:"g29" 
                             "g29__descripcion" 
                             "g29__precio"
@@ -67,13 +80,13 @@
                             "fanatec" 
                             "fanatec__descripcion" 
                             "fanatec__precio";
-        row-gap: 30px;
-        padding: 15px;
+        row-gap: 1rem;
+        padding: 1rem;
 
         &__imagen{
             justify-self: center;
             width: 80vw;
-            border-top: 3px solid #ff9201;
+            border-top: .25rem solid #ff9201;
         }
     
         &__compra{
@@ -117,11 +130,11 @@
     /* CONTACTO MOBILE */
 
     .formulario{
-        height: 60vh;
+        height: 80vh;
     }
 
     h1{
-        font-size: 35px;
+        font-size: 2rem;
     }
 
     .btn:hover{
@@ -129,7 +142,7 @@
     }
 
     .maps__titulo{
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .footer{
@@ -142,6 +155,46 @@
 
 @media (min-width: 576px) and (max-width: 992px){
 
+    /* INDEX TABLET */
+
+    .principal{
+
+        &__texto{
+            top: 18rem;
+            left: 1rem;
+
+            &--frase{
+                font-size: 1.8rem;
+            }
+
+            &--McRae{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /* NOSOTROS TABLET */
+
+    .nosotros{
+
+        &__rally{
+
+            &--texto{
+                line-height: 2.5rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        &__pista{
+        
+            &--texto{
+                line-height: 2.5rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 
     /* PRODUCTOS TABLET */
 

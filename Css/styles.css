@@ -22,12 +22,6 @@ h4 {
   font-family: "Open Sans", sans-serif;
   color: #037474; }
 
-.navbar-toggler {
-  border: none; }
-
-.navbar {
-  --bs-navbar-toggler-focus-width: none; }
-
 .navegador {
   position: sticky;
   top: 0px;
@@ -75,7 +69,18 @@ h4 {
   justify-content: center;
   align-items: center; }
   .principal__foto {
-    width: 98vw; }
+    position: relative; }
+  .principal__texto {
+    position: absolute;
+    top: 350px;
+    left: 30px; }
+    .principal__texto--frase {
+      font-size: 52px;
+      font-weight: bold;
+      color: whitesmoke; }
+    .principal__texto--McRae {
+      font-size: 24px;
+      color: whitesmoke; }
 
 .nosotros img {
   width: 200px;
@@ -223,42 +228,47 @@ textarea {
 @media (min-width: 320px) and (max-width: 575px) {
   /* NAVEGADOR MOBILE*/
   .navegador__logo {
-    width: 150px;
-    margin: 10px; }
+    width: 9rem;
+    margin: 1rem; }
   /* INDEX MOBILE */
-  .principal {
-    padding: 10px; }
+  .principal__texto {
+    top: 12rem;
+    left: 1rem; }
+    .principal__texto--frase {
+      font-size: 1rem; }
+    .principal__texto--McRae {
+      font-size: .7rem; }
   /* NOSOTROS MOBILE */
   .nosotros img {
-    width: 300px;
-    padding-bottom: 2px; }
+    width: 20rem;
+    padding-bottom: .2rem; }
   .nosotros__rally {
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 1fr;
     grid-template-areas: "rallyText"  "imgRally"; }
     .nosotros__rally--img {
       border-left: none;
-      border-top: 3px solid #ff9201;
-      padding: 15px; }
+      border-top: .25rem solid #ff9201;
+      padding: 1rem; }
   .nosotros__pista {
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 1fr;
     grid-template-areas: "pistaText"  "imgPista"; }
     .nosotros__pista--img {
       border-right: none;
-      border-top: 3px solid #ff9201;
-      padding: 15px; }
+      border-top: .25rem solid #ff9201;
+      padding: 1rem; }
   /* PRODUCTOS MOBILE */
   .productos {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "g29"  "g29__descripcion"  "g29__precio" "t300"  "t300__descripcion"  "t300__precio" "fanatec"  "fanatec__descripcion"  "fanatec__precio";
-    row-gap: 30px;
-    padding: 15px; }
+    row-gap: 1rem;
+    padding: 1rem; }
     .productos__imagen {
       justify-self: center;
       width: 80vw;
-      border-top: 3px solid #ff9201; }
+      border-top: .25rem solid #ff9201; }
     .productos__compra {
       display: flex;
       justify-self: center;
@@ -277,18 +287,35 @@ textarea {
     align-content: center; }
   /* CONTACTO MOBILE */
   .formulario {
-    height: 60vh; }
+    height: 80vh; }
   h1 {
-    font-size: 35px; }
+    font-size: 2rem; }
   .btn:hover {
     transform: none; }
   .maps__titulo {
-    font-size: 20px; }
+    font-size: 1.5rem; }
   .footer {
     flex-direction: column-reverse; } }
 
 /* MEDIA QUERIES TABLET*/
 @media (min-width: 576px) and (max-width: 992px) {
+  /* INDEX TABLET */
+  .principal__texto {
+    top: 18rem;
+    left: 1rem; }
+    .principal__texto--frase {
+      font-size: 1.8rem; }
+    .principal__texto--McRae {
+      font-size: 1rem; }
+  /* NOSOTROS TABLET */
+  .nosotros__rally--texto {
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column; }
+  .nosotros__pista--texto {
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column; }
   /* PRODUCTOS TABLET */
   .productos button:hover {
     transform: none; }
