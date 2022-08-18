@@ -1,5 +1,5 @@
 <h1>NG Simracing-Proyecto Coderhouse</h1>
-<p>Sitio creado para curso web Coderhouse</p>
+<p>Sitio creado para curso Desarrolo Web Coderhouse</p>
 
 <h2>Tecnologias usadas</h2>
 <ul>

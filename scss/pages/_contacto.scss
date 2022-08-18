@@ -4,7 +4,7 @@
 
 .btn{
     background-image: linear-gradient(to top, rgb(16, 141, 124), rgba(57, 236, 221, 0.87));
-    border-radius: 20px;
+    border-radius: 1.5rem;
     border: none;
     color: white;
     &:hover{
@@ -17,7 +17,7 @@
 
 .maps__titulo{
     font-family: $font-principal;
-    font-size: 35px;
+    font-size: 2rem;
     color: $color-titulos;
 }
 

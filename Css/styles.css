@@ -9,13 +9,13 @@
 
 p {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: justify;
-  margin: 25px; }
+  margin: 1.5rem; }
 
 h1 {
   font-family: "Lato", sans-serif;
-  font-size: 45px;
+  font-size: 3rem;
   color: #037474; }
 
 h4 {
@@ -43,11 +43,12 @@ h4 {
   .navegador li {
     font-family: "Open Sans", sans-serif; }
 
-.navbar-toggler {
-  border: none; }
-
 .navbar {
   --bs-navbar-toggler-focus-width: none; }
+  .navbar-toggler {
+    border: none; }
+  .navbar-nav {
+    --bs-nav-link-padding-x: 1rem; }
 
 .footer {
   display: flex;
@@ -64,16 +65,12 @@ h4 {
     width: 62px; }
 
 .principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .principal__foto {
-    position: relative; }
+  position: relative;
+  display: inline-block; }
   .principal__texto {
     position: absolute;
-    top: 350px;
-    left: 30px; }
+    top: 200px;
+    left: 20px; }
     .principal__texto--frase {
       font-size: 52px;
       font-weight: bold;
@@ -81,6 +78,8 @@ h4 {
     .principal__texto--McRae {
       font-size: 24px;
       color: whitesmoke; }
+    .principal__texto--parrafo {
+      line-height: 2rem; }
 
 .nosotros img {
   width: 200px;
@@ -193,7 +192,10 @@ h4 {
   border: 4px solid #ffa048;
   border-radius: 20px;
   margin: 20px;
-  box-shadow: 10px gray; }
+  box-shadow: 2px 5px 8px 5px #acaaaa; }
+  .esport__card:hover {
+    transform: scale(1.02, 1.02);
+    transition: 1s; }
   .esport__card--img {
     width: 300px;
     height: 300px;
@@ -207,7 +209,7 @@ h4 {
 
 .btn {
   background-image: linear-gradient(to top, #108d7c, rgba(57, 236, 221, 0.87));
-  border-radius: 20px;
+  border-radius: 1.5rem;
   border: none;
   color: white; }
   .btn:hover {
@@ -218,7 +220,7 @@ h4 {
 
 .maps__titulo {
   font-family: "Lato", sans-serif;
-  font-size: 35px;
+  font-size: 2rem;
   color: #037474; }
 
 textarea {
@@ -232,8 +234,8 @@ textarea {
     margin: 1rem; }
   /* INDEX MOBILE */
   .principal__texto {
-    top: 12rem;
-    left: 1rem; }
+    top: 4rem;
+    left: .7rem; }
     .principal__texto--frase {
       font-size: 1rem; }
     .principal__texto--McRae {
@@ -285,6 +287,9 @@ textarea {
   .esport__section {
     flex-direction: column;
     align-content: center; }
+  .esport__card:hover {
+    transform: none;
+    transition: none; }
   /* CONTACTO MOBILE */
   .formulario {
     height: 80vh; }
@@ -301,12 +306,14 @@ textarea {
 @media (min-width: 576px) and (max-width: 992px) {
   /* INDEX TABLET */
   .principal__texto {
-    top: 18rem;
+    top: 8rem;
     left: 1rem; }
     .principal__texto--frase {
       font-size: 1.8rem; }
     .principal__texto--McRae {
       font-size: 1rem; }
+    .principal__texto--parrafo {
+      line-height: 2.5rem; }
   /* NOSOTROS TABLET */
   .nosotros__rally--texto {
     line-height: 2.5rem;
@@ -317,12 +324,17 @@ textarea {
     display: flex;
     flex-direction: column; }
   /* PRODUCTOS TABLET */
-  .productos button:hover {
-    transform: none; }
+  .productos {
+    grid-template-rows: auto; }
+    .productos button:hover {
+      transform: none; }
   /* ESPORT TABLET */
   .esport__section {
     flex-direction: column;
     align-content: center; }
+  .esport__card:hover {
+    transform: none;
+    transition: none; }
   /* CONTACTO TABLET */
   .formulario {
     height: 55vh; }
