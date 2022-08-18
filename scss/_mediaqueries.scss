@@ -18,8 +18,8 @@
     .principal{
 
         &__texto{
-            top: 12rem;
-            left: 1rem;
+            top: 4rem;
+            left: .7rem;
     
             &--frase{
                 font-size: 1rem;
@@ -121,9 +121,15 @@
     /* ESPORT MOBILE */
 
     .esport{
+        
         &__section{
-            flex-direction: column;
-            align-content: center;
+        flex-direction: column;
+        align-content: center;
+        }
+
+        &__card:hover{
+            transform: none;
+            transition: none;
         }
     }
 
@@ -160,7 +166,7 @@
     .principal{
 
         &__texto{
-            top: 18rem;
+            top: 8rem;
             left: 1rem;
 
             &--frase{
@@ -169,6 +175,10 @@
 
             &--McRae{
                 font-size: 1rem;
+            }
+
+            &--parrafo{
+                line-height: 2.5rem;
             }
         }
     }
@@ -198,15 +208,27 @@
 
     /* PRODUCTOS TABLET */
 
-    .productos button:hover{
+    .productos{
+    grid-template-rows: auto;
+
+        & button:hover{
         transform: none;
+        }
     }
 
     /* ESPORT TABLET */
 
-    .esport__section{
+    .esport{
+        
+        &__section{
         flex-direction: column;
         align-content: center;
+        }
+
+        &__card:hover{
+            transform: none;
+            transition: none;
+        }
     }
 
     /* CONTACTO TABLET */
