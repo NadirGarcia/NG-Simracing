@@ -1,25 +1,130 @@
 .productos{
     display: grid;
     grid-template-columns: 0.7fr 2fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"g29 g29__descripcion g29__precio"
+    grid-template-rows: auto 1fr auto 1fr auto 1fr;
+    grid-template-areas:"logitech logitech logitech"
+                        "g29 g29__descripcion g29__precio"
+                        "thrustmaster thrustmaster thrustmaster"
                         "t300 t300__descripcion t300__precio"
-                        "fanatec fanatec__descripcion fanatec__precio";
+                        "fanatec fanatec fanatec"
+                        "csl csl__descripcion csl__precio";
 
-    &__imagen{
+    &__logitech{
+        grid-area: logitech;
+        height: 60px;
         display: flex;
-        align-self: center;
-        width: 300px;
-        padding: 30px;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(8, 211, 160), whitesmoke);       
+        margin: 1rem;
+        padding: 1rem;
+        font-family: $font-principal;
+        font-weight: 800;
+        color: white;
+
+        &--imagen{
+            grid-area: g29;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            width: 300px;
+            padding: 30px;
+        }
+
+        &--texto{
+            grid-area: g29__descripcion;
+            display: flex;
+            align-items: center;
+            font-family: $font-secundaria;
+            font-size: 1rem;
+        }
+
+        &--compra{
+            grid-area: g29__precio;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-principal;
+            font-size: 15px;
+        }
     }
 
-    &__compra{
+    &__thrustmaster{
+        grid-area: thrustmaster;
+        height: 60px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        background-image: linear-gradient(to right, rgb(8, 211, 160), whitesmoke);       
+        margin: 1rem;
+        padding: 1rem;
         font-family: $font-principal;
-        font-size: 15px;
+        font-weight: 800;
+        color: white;
+
+        &--imagen{
+            grid-area: t300;
+            display: flex;
+            align-self: center;
+            width: 300px;
+            padding: 30px;
+        }
+
+        &--texto{
+            grid-area: t300__descripcion;
+            display: flex;
+            align-items: center;
+            font-family: $font-secundaria;
+            font-size: 1rem;
+        }
+
+        &--compra{
+            grid-area: t300__precio;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-principal;
+            font-size: 15px;
+        }
+    }
+
+    &__fanatec{
+        grid-area: fanatec;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(8, 211, 160), whitesmoke);       
+        margin: 1rem;
+        padding: 1rem;
+        font-family: $font-principal;
+        font-weight: 800;
+        color: white;
+
+        &--imagen{
+            grid-area: csl;
+            display: flex;
+            align-self: center;
+            width: 300px;
+            padding: 30px;
+        }
+
+        &--texto{
+            grid-area: csl__descripcion;
+            display: flex;
+            align-items: center;
+            font-family: $font-secundaria;
+            font-size: 1rem;
+        }
+
+        &--compra{
+            grid-area: csl__precio;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-principal;
+            font-size: 15px;
+        }
     }
 
     & button{
@@ -34,55 +139,6 @@
             transition: 1s;
             border:  1px solid rgb(201, 83, 5);
             color: rgb(201, 83, 5);
-        }
-    }
-
-    .g29{
-        grid-area: g29;
-
-        &__descripcion{
-            grid-area: g29__descripcion;
-            @extend .productos-grid;
-            font-family: $font-secundaria;
-            font-size: 16px;
-            border-bottom: 3px solid #ff9201;
-        }
-        
-        &__precio{
-            grid-area: g29__precio;
-        }
-    }
-    
-    .t300{
-        grid-area: t300;
-
-        &__descripcion{
-            grid-area: t300__descripcion;
-            @extend .productos-grid;
-            font-family: $font-secundaria;
-            font-size: 16px;
-            border-bottom: 3px solid #ff9201;
-        }
-        
-        &__precio{
-            grid-area: t300__precio;
-        }
-    }
-    
-
-    .fanatec{
-        grid-area: fanatec;
-
-        &__descripcion{
-            grid-area: fanatec__descripcion;
-            @extend .productos-grid;
-            font-family: $font-secundaria;
-            font-size: 16px;
-            border-bottom: 3px solid #ff9201;
-        }
-        
-        &__precio{
-            grid-area: fanatec__precio;
         }
     }
 }
