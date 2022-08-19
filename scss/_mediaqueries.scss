@@ -71,22 +71,24 @@
     .productos{
         grid-template-columns: 1fr ;
         grid-template-rows:auto;
-        grid-template-areas:"g29" 
+        grid-template-areas:"logitech"
+                            "g29" 
                             "g29__descripcion" 
                             "g29__precio"
+                            "thrustmaster"
                             "t300" 
                             "t300__descripcion" 
                             "t300__precio"
-                            "fanatec" 
-                            "fanatec__descripcion" 
-                            "fanatec__precio";
+                            "fanatec"
+                            "csl" 
+                            "csl__descripcion" 
+                            "csl__precio";
         row-gap: 1rem;
         padding: 1rem;
 
         &__imagen{
             justify-self: center;
             width: 80vw;
-            border-top: .25rem solid #ff9201;
         }
     
         &__compra{
@@ -97,24 +99,6 @@
     
         & button:hover{
             transform: none;
-        }
-
-        .g29{
-            &__descripcion{
-                border-bottom: none;
-            }
-        }
-
-        .t300{
-            &__descripcion{
-            border-bottom: none;
-            }
-        }
-
-        .fanatec{
-            &__descripcion{
-                border-bottom:none;
-            }
         }
     }
 
