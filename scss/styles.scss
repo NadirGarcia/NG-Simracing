@@ -1,9 +1,10 @@
-@import "variables";
-@import "operators";
-@import "base";
-@import "navegador";
-@import "footer";
-@import "pages/main";
+@import "utilities/variables";
+@import "utilities/operators";
+@import "base/reset";
+@import "base/fonts";
+@import "layout/navegador";
+@import "layout/footer";
+@import "pages/index";
 @import "pages/nosotros";
 @import "pages/productos";
 @import "pages/esport";

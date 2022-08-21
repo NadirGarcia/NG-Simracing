@@ -11,119 +11,61 @@
 
     &__logitech{
         grid-area: logitech;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        background-image: linear-gradient(to right, rgb(8, 211, 160), whitesmoke);       
-        margin: 1rem;
-        padding: 1rem;
-        font-family: $font-principal;
-        font-weight: 800;
-        color: white;
+        @extend.productos-grid;
 
         &--imagen{
             grid-area: g29;
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            width: 300px;
-            padding: 30px;
+            @extend.productos-imagen;
         }
 
         &--texto{
             grid-area: g29__descripcion;
-            display: flex;
-            align-items: center;
-            font-family: $font-secundaria;
-            font-size: 1rem;
+            @extend.productos-texto;
         }
 
         &--compra{
             grid-area: g29__precio;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: $font-principal;
-            font-size: 15px;
+            @extend.productos-compra;
         }
     }
 
     &__thrustmaster{
         grid-area: thrustmaster;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        background-image: linear-gradient(to right, rgb(8, 211, 160), whitesmoke);       
-        margin: 1rem;
-        padding: 1rem;
-        font-family: $font-principal;
-        font-weight: 800;
-        color: white;
+        @extend.productos-grid;;
 
         &--imagen{
             grid-area: t300;
-            display: flex;
-            align-self: center;
-            width: 300px;
-            padding: 30px;
+            @extend.productos-imagen;
         }
 
         &--texto{
             grid-area: t300__descripcion;
-            display: flex;
-            align-items: center;
-            font-family: $font-secundaria;
-            font-size: 1rem;
+            @extend.productos-texto;
         }
 
         &--compra{
             grid-area: t300__precio;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: $font-principal;
-            font-size: 15px;
+            @extend.productos-compra;
         }
     }
 
     &__fanatec{
         grid-area: fanatec;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        background-image: linear-gradient(to right, rgb(8, 211, 160), whitesmoke);       
-        margin: 1rem;
-        padding: 1rem;
-        font-family: $font-principal;
-        font-weight: 800;
-        color: white;
+        @extend.productos-grid;
 
         &--imagen{
             grid-area: csl;
-            display: flex;
-            align-self: center;
-            width: 300px;
-            padding: 30px;
+            @extend.productos-imagen;
         }
 
         &--texto{
             grid-area: csl__descripcion;
-            display: flex;
-            align-items: center;
-            font-family: $font-secundaria;
-            font-size: 1rem;
+            @extend.productos-texto;
         }
 
         &--compra{
             grid-area: csl__precio;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: $font-principal;
-            font-size: 15px;
+            @extend.productos-compra;
         }
     }
 
